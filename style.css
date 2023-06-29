@@ -41,6 +41,9 @@ section {
   align-items: center;
   z-index: 100;
 }
+h2 {
+  font-size: 20px;
+}
 .header.sticky {
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
 }
@@ -238,18 +241,20 @@ span {
   gap: 2.5rem;
 }
 .portfolio-container .portfolio-box {
+  width: 70%;
   position: relative;
   border-radius: 2rem;
   box-shadow: 0 0 1rem var(--bg-color);
   overflow: hidden;
   display: flex;
 }
-.portfolto-box img {
+.portfolto-box > img {
   width: 100%;
+
   transition: 0.5s ease;
 }
 .portfolto-box:hover img {
-  transform: scale(1.1);
+  transform: scale(1.4);
 }
 .portfolio-box .portfolio-layer {
   position: absolute;
@@ -265,7 +270,7 @@ span {
   text-align: center;
   padding: 0.4rem;
   transform: translateY(100%);
-  transition: 0.5s ease;
+  transition: 0.5s ease-in-out;
 }
 .portfolio-box:hover .portfolio-layer {
   transform: translateY(0);
